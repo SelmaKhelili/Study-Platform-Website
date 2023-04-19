@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="static/css/side_bar_style.css" />
+    <link rel="stylesheet" href="static/css/main.css" />
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <!--<img src="logo.png" alt="">-->
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">Welcome</span>
+            <span class="profession">Web developer</span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+          </li>
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="index.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="calendar.html">
+                <i class="bx bx-calendar-week icon"></i>
+                <span class="text nav-text">Calender</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="settings.html">
+                <i class="bx bx-cog icon"></i>
+                <span class="text nav-text">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="nav-link">
+            <a href="Profile.html">
+              <i class="bx bx-user icon"></i>
+
+              <span class="text nav-text">Profile</span>
+            </a>
+          </li>
+          <li class="">
+            <a href="#">
+              <i class="bx bx-log-out icon"></i>
+              <span class="text nav-text">Logout</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="mainContent">
+        <nav class="header_home">
+          <div class="search">
+            <div class="input__and_icon">
+              <i class="bx bx-search"></i>
+              <input
+                class="search_box"
+                type="text"
+                placeholder="Look up courses or teachers"
+                name="search"
+              />                
+              </div>
+              
+            <select name="location" class="location_filter">
+              <option value="0">Location:</option>
+              <option value="Algiers"></option>
+              <option value="Algiers"></option>
+            </select>
+          </div>
+          <div class="progress">
+            <div class="icon_div"><i class='bx bx-battery ' ></i></div>
+            Battery: 11%
+          </div>
+        </nav>
+        <div class="courses_filter_div">
+          <h3>Courses</h3>
+          <select name="filter" class="course_filter">
+            <option value="0">All</option>
+            <option value="All"></option>
+            <option value="Today"></option>
+            <option value="This Month"></option>
+          </select>
+        </div>
+        <div class="courses">
+          <div class="course">
+            <div class="picture"><img src="static/img/c_pic/functions.jpg" /></div>
+            <div class="info">
+              <div class="Author">
+                <img src="static/img/Profile_pic_1.png">
+                <h5>Professor Mourad </h5>
+              </div>
+              <div class="details">
+                <h4>Mathematics-Functions</h4>
+                <div class="pagraph">
+                  <p>
+                   This is a mathematics course for secondary school students
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="action">
+                <div class="learn">
+                <h5>LEARN MORE</h5>
+                <i class='bx bx-right-arrow icon' ></i>             
+              </div>
+              <i class='bx bx-bookmark-alt icon' ></i>
+            </div>
+          </div>
+          <div class="course">
+            <div class="picture"><img src="static/img/c_pic/chemistry.png" /></div>
+            <div class="info">
+              <div class="Author">
+                <img src="static/img/Profile_pic_1.png">
+                <h5>Professor Mourad </h5>
+              </div>
+              <div class="details">
+                <h4>Physics-Chemistry</h4>
+                <div class="pagraph">
+                 This is a chemistry course for students in the 4th year in middle school
+                </div>
+              </div>
+            </div>
+            <div class="action">
+                <div class="learn">
+                <h5>LEARN MORE</h5>
+                <i class='bx bx-right-arrow icon' ></i>             
+              </div>
+              <i class='bx bx-bookmark-alt icon' ></i>
+            </div>
+          </div>
+          
+          <div class="course">
+            <div class="picture"><img src="static/img/c_pic/chemistry.png" /></div>
+            <div class="info">
+              <div class="Author">
+                <img src="static/img/Profile_pic_1.png">
+                <h5>Professor Mourad </h5>
+              </div>
+              <div class="details">
+                <h4>Physics-Chemistry</h4>
+                <div class="pagraph">
+                 This is a chemistry course for students in the 4th year in middle school
+                </div>
+              </div>
+            </div>
+            <div class="action">
+                <div class="learn">
+                <h5>LEARN MORE</h5>
+                <i class='bx bx-right-arrow icon' ></i>             
+              </div>
+              <i class='bx bx-bookmark-alt icon' ></i>
+            </div>
+          </div>
+          <div class="course">
+            <div class="picture"><img src="static/img/c_pic/chemistry.png" /></div>
+            <div class="info">
+              <div class="Author">
+                <img src="static/img/Profile_pic_1.png">
+                <h5>Professor Mourad </h5>
+              </div>
+              <div class="details">
+                <h4>Physics-Chemistry</h4>
+                <div class="pagraph">
+                 This is a chemistry course for students in the 4th year in middle school
+                </div>
+              </div>
+            </div>
+            <div class="action">
+                <div class="learn">
+                <h5>LEARN MORE</h5>
+                <i class='bx bx-right-arrow icon' ></i>             
+              </div>
+              <i class='bx bx-bookmark-alt icon' ></i>
+            </div>
+          </div>
+          <div class="course">
+            <div class="picture"><img src="static/img/c_pic/chemistry.png" /></div>
+            <div class="info">
+              <div class="Author">
+                <img src="static/img/Profile_pic_1.png">
+                <h5>Professor Mourad </h5>
+              </div>
+              <div class="details">
+                <h4>Physics-Chemistry</h4>
+                <div class="pagraph">
+                 This is a chemistry course for students in the 4th year in middle school
+                </div>
+              </div>
+            </div>
+            <div class="action">
+                <div class="learn">
+                <h5>LEARN MORE</h5>
+                <i class='bx bx-right-arrow icon' ></i>             
+              </div>
+              <i class='bx bx-bookmark-alt icon' ></i>
+            </div>
+          </div>
+          <div class="course">
+            <div class="picture"><img src="static/img/c_pic/chemistry.png" /></div>
+            <div class="info">
+              <div class="Author">
+                <img src="static/img/Profile_pic_1.png">
+                <h5>Professor Mourad </h5>
+              </div>
+              <div class="details">
+                <h4>Physics-Chemistry</h4>
+                <div class="pagraph">
+                 This is a chemistry course for students in the 4th year in middle school
+                </div>
+              </div>
+            </div>
+            <div class="action">
+                <div class="learn">
+                <h5>LEARN MORE</h5>
+                <i class='bx bx-right-arrow icon' ></i>             
+              </div>
+              <i class='bx bx-bookmark-alt icon' ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer" >
+    @Copyright 2023 Ensia
+</footer>
+    </section>
+
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

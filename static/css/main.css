@@ -1,0 +1,306 @@
+/* Google Font Import - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* ===== Colors ===== */
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #c25cea;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+}
+
+::selection {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+body.dark {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #c25cea;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+}
+/*Main Content*/
+.home {
+  position: absolute;
+  top: 0;
+  top: 0;
+  left: 250px;
+  height: 100vh;
+  width: calc(100% - 300px);
+  background-color: var(--body-color);
+  transition: var(--tran-05);
+}
+
+/*Header of the Home page*/
+.header_home {
+  position: fixed;
+  top: 0;
+  left: 170px;
+  width: 85%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  z-index: 99;
+}
+.header_home .progress {
+  width: 150px;
+  height: 40px;
+  background-color: #c25cea;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  color: #f6f5ff;
+  font-weight: 500;
+ 
+}
+.header_home .progress:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+.header_home .progress .icon_div {
+  background-color: #f6f5ff;
+  width: 45px;
+  height: 40px;
+  border-radius: 18px 20px 20px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  -webkit-box-shadow: 15px 2px 5px -4px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 15px 2px 5px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 15px 2px 5px -4px rgba(0, 0, 0, 0.1);
+}
+.header_home .progress .icon_div i {
+  font-size: 25px;
+  font-weight: 700;
+  color: #383838;
+}
+.mainContent {
+  margin-top: 150px;
+}
+.search {
+  width: 550px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+
+  height: 45px;
+  border: none;
+  padding-left: 13px;
+}
+.input__and_icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.search_box {
+  width: 300px;
+  border-radius: 10px 0px 0px 10px;
+  height: 30px;
+  border: none;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+.search .location_filter {
+  width: 200px;
+  height: 30px;
+  border: none;
+  padding-left: 5px;
+  color: black;
+  border-color: black;
+}
+
+.search .location_filter option {
+  width: 150px;
+
+  background-color: rgb(165, 161, 161);
+}
+
+.mainContent .courses_filter_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 90px;
+  margin-left: 10px; /* adjust the value based on the height of your header and any additional margin or padding you want to add */
+}
+
+.mainContent .courses_filter_div h4 {
+  width: 90px;
+  height: 30px;
+  border: none;
+  padding-left: 0px;
+  color: black;
+  border-color: black;
+}
+.mainContent .courses_filter_div .course_filter {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 120px;
+  border-color: #3a3b3c;
+}
+.mainContent .courses {
+  width: 90%;
+  height: fit-content;
+  background-color: #fffbfbcc;
+  border-radius: 10px 0px 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  row-gap: 0px;
+}
+.mainContent .courses:hover {
+    opacity: 0.9;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.mainContent .courses .course {
+  margin: 5px;
+  margin-left: 15px;
+  height: 55vh;
+  background-color: #e7e6e6;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  padding-top: 12px;
+  overflow: hidden;
+}
+
+.mainContent .courses .course .picture {
+  width: 95%;
+  height: 55%;
+  padding: 5px;
+  background-color: #f6f5ff;
+  border-radius: 10px 10px 0px 0px;
+}
+.mainContent .courses .course .info {
+  width: 95%;
+  height: 32%;
+  background-color: #f6f5ff;
+  display: flex;
+  flex-direction: column;
+}
+.mainContent .courses .course .action {
+  width: 95%;
+  height: 13%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  background-color: #f6f5ff;
+  border-radius: 0px 0px 10px 10px;
+  padding: 5px;
+  padding-right: 15px;
+}
+
+.mainContent .courses .course .picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.mainContent .courses .course .info .Author {
+  width: 100%;
+  height: 25%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+.mainContent .courses .course .info .Author h5 {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.mainContent .courses .course .info .Author img {
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+}
+.mainContent .courses .course .info .details {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.mainContent .courses .course .info .details .paragraph p {
+  max-width: 80px;
+  font-size: 12px;
+  word-break: break-word;
+  padding-right: 20px;
+}
+.mainContent .courses .course .action .learn {
+  width: fit-content;
+  height: 35px;
+  border-radius: 18px;
+  background-color: #a745ce;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+  align-items: center;
+}
+.mainContent .courses .course .action .learn h5 {
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 450;
+  color: white;
+}
+.mainContent .courses .course .action i {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+.mainContent .courses .course .action .learn i {
+  font-size: 19px;
+  color: white;
+}
+.footer
+{
+    position: relative;
+    margin-top: 19px;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #d1cdcd;
+}
